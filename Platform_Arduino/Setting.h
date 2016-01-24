@@ -18,37 +18,14 @@
 */
 
 
-
 #ifndef __SETTING_h
 #define __SETTING_h
 
 // must be ENABLED(= #define GE836_GPS) if new GSM-GPS Playground Shield V2.0 is used
 // must be DISABLED(= //#define GE836_GPS) if old GSM Playground is used
+// if your GSM Shield has GPS features, you may define this part
 // ----------------------------------------------------------------------------------
-#define GE836_GPS
-
-
-// Simple debug print
-// Keep in mind that DEBUG PRINT has only very limited functionality
-// and can not be 100% guaranteed becuase all debug strings are sent also to the 
-// GSM module and thus can be interpreted as AT commands.
-// -------------------------------------------------------------
-//#define DEBUG_PRINT
-
-
-// if defined - debug LED is enabled, otherwise debug LED is disabled
-// -------------------------------------------------------------
-//#define DEBUG_LED_ENABLED
-
-
-
-// if defined - SMSs are not send(are finished by the character 0x1b
-// which causes that SMS are not sent)
-// by this way it is possible to develop program without paying for SMSs 
-// -------------------------------------------------------------
-//#define DEBUG_SMS_ENABLED
-
-
+//define GE836_GPS
 
 
 #endif // end of ifndef __SETTING_h
